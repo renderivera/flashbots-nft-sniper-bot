@@ -1,6 +1,6 @@
 {
   "name": "Flashbots-NFT-Sniper-Bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Attempts to mint a predefined amount of NFTs when public mint opens.",
   "author": "sipox11",
   "main": "scripts/index.js",

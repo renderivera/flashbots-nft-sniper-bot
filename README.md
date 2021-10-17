@@ -25,7 +25,20 @@ Make sure to populate all fields correctly.
 
 For both private keys, make sure you remove the '0x' prefix when pasting them into the .env file variables.
 
-- Make sure you set the ENVIRONMENT value to production if you are ready for your bundles to start being sent:
+
+- For testing purposes, set ENVIRONMENT to simulation (it will only simulate the bundle):
+
+```.env
+ENVIRONMENT=simulation
+```
+
+- After that, set ENVIRONMENT to dev (it will simulate and send the bundle):
+
+```.env
+ENVIRONMENT=simulation
+```
+
+- Finally, make sure you set the ENVIRONMENT value to production if you are ready for your bundles to start being sent:
 
 ```.env
 ENVIRONMENT=production

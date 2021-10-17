@@ -59,16 +59,15 @@ async function processBlock(block) {
     // Check if public sale is open
     // TODO: Modify the name of the public sale getter function
     log(`Checking if public sale is open...`);
-    let isSaleLive = await bundleLauncher.getContract().callStatic.saleOpen();
+    let isSaleLive = await bundleLauncher.getContract().callStatic.saleIsActive();
     if(isSaleLive) {
         log('Public sale is open!');
-        await sendNotification();
+        // await sendNotification();
         log('Starting bundle launcher...');
         await bundleLauncher.fire(block, feeData);
     } else {
         log('Public sale is still closed.');
     }
-    log('/'.repeat(78));
 }
 
 main()
