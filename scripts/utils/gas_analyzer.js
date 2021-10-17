@@ -4,7 +4,7 @@ const log = require('./logger');
 const ONE_ETH = ethers.utils.parseEther('1.0');
 const ONE_GWEI = ethers.utils.parseUnits('1.0', 'gwei');
 // Constants
-const MIN_CONTRACT_GAS_UNITS_CONSUMPTION = parseInt(process.env.GAS_USAGE_ESTIMATION) * parseInt(process.env.TOKEN_AMOUNT);
+const MIN_CONTRACT_GAS_UNITS_CONSUMPTION = parseInt(process.env.GAS_USAGE_ESTIMATION);
 
 /**
  * Retrieves next block's max base fee from Flashbots provider
